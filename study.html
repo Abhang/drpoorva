@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Redirecting...| Minita Mehendale Classes</title>
+<script>
+function redirect() {
+  if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    // Redirect to specific Meet link in Meets app for mobile devices
+    window.location.href = "gmeet://zkz-zokv-ubk";
+  } else if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    // Redirect to www.abha.ng for laptops and desktops
+    window.location.href = "googlemeet://meet.google.com/zkz-zokv-ubk";
+  } else {
+    // Redirect to www.abha.ng for laptops and desktops
+    window.location.href = "https://meet.google.com/zkz-zokv-ubk";
+  }
+}
+
+redirect(); // Call the redirect function immediately
+</script>
+</head>
+<body>
+<p>Redirecting... | Minita Mehendale Classes </p>
+</body>
+</html>
